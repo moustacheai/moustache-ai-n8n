@@ -133,3 +133,12 @@ Contributions to improve this deployment example are welcome! Please feel free t
 ## License
 
 This example is provided under the terms of the MIT license.
+
+## October 2026 Node.js security baseline
+
+Use **Node 22.23.4 or a newer 22.x patch** (`nvm install && nvm use` locally).
+The pinned n8n 2.15.1 package supports Node >=22.16; keep the existing Node 22
+line and update its patch level. `engines.node` takes precedence over Clever
+Cloud’s `CC_NODE_VERSION=22`. No n8n dependency or workflow data is changed.
+An approved application redeploy is still required. Verify the Node binary of
+every serving process afterwards; the default SSH shell is not runtime proof.

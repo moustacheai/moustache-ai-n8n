@@ -24,5 +24,8 @@
   "homepage": "https://github.com/CleverCloud/n8n-example#readme",
   "dependencies": {
     "n8n": "2.15.1"
+  },
+  "engines": {
+    "node": ">=22.23.4 <23"
   }
 }
